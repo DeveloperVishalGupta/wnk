@@ -69,7 +69,7 @@
          <div>
             <ul class="subMenu" >
                 <li class="submenuItem">All</li>
-                <li class="submenuItem" >tranding Now</li>
+                <li class="submenuItem" >Trending Now</li>
                 <li class="submenuItem" >Old Songs</li>
                 <li class="submenuItem" >New Songs</li>
                 <li class="submenuItem" >Party Songs</li>
@@ -1028,195 +1028,595 @@
         </div>
     </footer>
 </body>
-<!-- <script>
-     const songs = [
-      { id: 1, name: "Apple", price: "$2" },
-      { id: 2, name: "Banana", price: "$1" },
-      { id: 3, name: "Mango", price: "$3" }
-    ];
-
-    const productList = document.getElementById("playlist-item");
-
-    songs.map(song => {
-  const listItem = document.createElement("li");
-  listItem.textContent = `${product.name} - ${product.price}`;
-  productList.appendChild(listItem);
-});
-</script> -->
-
-<!-- <script>
+<script>
     const playlistData = [
       {
-        index: "01",
-        image: "media/imagesssssssss/imageess/tujh me rab dhiktha h.jpg",
-        src:'media/audio/bhaktiSongs1.mpeg',
-        title: "Tujh mein",
-        author: "rab dikhta hai"
-      },
-      {
-        index: "02",
-        image: "media/imagesssssssss/imageess/other_song.jpg",
-        title: "Another Song",
-        author: "Another Artist"
-      }
-    ];
-
-    const playlistContainer = document.getElementById("playlist-item");
-
-    playlistData.forEach(item => {
-      const playlistItem = document.createElement("div");
-      playlistItem.className = "playlist-item";
-
-      playlistItem.innerHTML = `
-        <div class="left-content">
-          <div style="margin-right:4px;">${item.index}</div>
-          <div class="coverer">
-            <audio controls>
-  <source src="${item.src}" type="audio/ogg">
-  <source src="${item.src}" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-            <img src="${item.image}" alt="${item.title}">
-            <div class="play-button">
-              <i class="fas fa-play" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div>
-            <div>${item.title}</div>
-            <p>${item.author}</p>
-          </div>
-        </div>
-        <div class="right-content">
-          <i class="far fa-heart"></i>
-        </div>
-      `;
-
-      playlistContainer.appendChild(playlistItem);
-    });
-  </script> -->
-
-  <!-- <script>
-    const playlistData = [
-      {
-        index: "01",
-        image: "media/imagesssssssss/imageess/tujh me rab dhiktha h.jpg",
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
         src: "media/audio/bhaktiSongs1.mpeg",
         title: "Tujh mein",
         author: "rab dikhta hai"
       },
       {
-        index: "02",
-        image: "media/imagesssssssss/imageess/other_song.jpg",
-        src: "media/audio/another_song.mpeg",
-        title: "Another Song",
-        author: "Another Artist"
-      }
-    ];
-
-    const playlistContainer = document.getElementById("playlist-item");
-
-    playlistData.forEach(item => {
-      const playlistItem = document.createElement("div");
-      playlistItem.className = "playlist-item";
-
-      // Create audio element for each item
-      const audio = document.createElement("audio");
-      audio.className = "audio-control";
-      audio.src = item.src;
-
-      playlistItem.innerHTML = `
-        <div class="left-content">
-          <div style="margin-right:4px;">${item.index}</div>
-          <div class="coverer">
-            <img src="${item.image}" alt="${item.title}">
-            <div class="play-button">
-              <i class="fas fa-play" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div>
-            <div>${item.title}</div>
-            <p>${item.author}</p>
-          </div>
-        </div>
-        <div class="right-content">
-          <i class="far fa-heart"></i>
-        </div>
-      `;
-
-      // Append the audio element to playlist item
-      playlistItem.appendChild(audio);
-
-      // Add click event on the cover image to play/pause audio
-      playlistItem.querySelector('.coverer').addEventListener('click', () => {
-        // If the audio is playing, pause it, else play it
-        if (audio.paused) {
-          audio.play();
-          playlistItem.querySelector('.play-button i').classList.replace('fa-play', 'fa-pause');
-        } else {
-          audio.pause();
-          playlistItem.querySelector('.play-button i').classList.replace('fa-pause', 'fa-play');
-        }
-
-        // Pause any other audio playing
-        document.querySelectorAll('.audio-control').forEach(otherAudio => {
-          if (otherAudio !== audio) {
-            otherAudio.pause();
-            otherAudio.parentElement.querySelector('.play-button i').classList.replace('fa-pause', 'fa-play');
-          }
-        });
-      });
-
-      playlistContainer.appendChild(playlistItem);
-    });
-  </script> -->
-
-  <script>
-    const playlistData = [
-      {
-       index:1,
-        image: "media/imagesssssssss/imageess/tujh me rab dhiktha h.jpg",
-        src: "media/audio/bhaktiSongs1.mpeg",
-        title: "Tujh mein",
-        author: "rab dikhta hai"
-      },
-      {
-        index:1,
-        image: "media/imagesssssssss/imageess/tujh me rab dhiktha h.jpg",
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
         src: "media/audio/bhaktiSongs2.mpeg",
-        title: "Another Song",
+        title: "bhaktiSongs2",
         author: "Another Artist"
       },
       {
-        index:1,
-        image: "media/imagesssssssss/imageess/tujh me rab dhiktha h.jpg",
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
         src: "media/audio/bhaktiSongs3.mpeg",
-        title: "Another Song",
+        title: "bhaktiSongs3",
         author: "Another Artist"
       },
       {
-        index:1,
-        image: "media/imagesssssssss/imageess/tujh me rab dhiktha h.jpg",
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
         src: "media/audio/bhaktiSongs4.mpeg",
-        title: "Another Song",
+        title: "bhaktiSongs4",
         author: "Another Artist"
-      }
-    ];
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/bhaktiSongs5.mpeg",
+        title: "bhaktiSongs5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/bhaktiSongs6.mpeg",
+        title: "bhaktiSongs6",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs1.mpeg",
+        title: "danceSongs1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs2.mpeg",
+        title: "danceSongs2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs3.mpeg",
+        title: "danceSongs3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs4.mpeg",
+        title: "danceSongs4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs5.mpeg",
+        title: "danceSongs5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs6.mpeg",
+        title: "danceSongs6",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs7.mpeg",
+        title: "danceSongs7",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong1.mpeg",
+        title: "newSong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong2.mpeg",
+        title: "newSong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong3.mpeg",
+        title: "newSong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong4.mpeg",
+        title: "newSong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong5.mpeg",
+        title: "newSong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong6.mpeg",
+        title: "newSong6",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong1.mpeg",
+        title: "oldSong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong2.mpeg",
+        title: "oldSong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong3.mpeg",
+        title: "oldSong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong4.mpeg",
+        title: "oldSong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong5.mpeg",
+        title: "oldSong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong6.mpeg",
+        title: "oldSong6",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong1.mpeg",
+        title: "partySong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong1.mpeg",
+        title: "partySong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong3.mpeg",
+        title: "partySong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong4.mpeg",
+        title: "partySong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong5.mpeg",
+        title: "partySong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong6.mpeg",
+        title: "partySong6",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong1.mpeg",
+        title: "romanticSong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong2.mpeg",
+        title: "romanticSong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong3.mpeg",
+        title: "romanticSong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong4.mpeg",
+        title: "romanticSong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong5.mpeg",
+        title: "romanticSong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong6.mpeg",
+        title: "romanticSong6",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong1.mpeg",
+        title: "trendingSong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong2.mpeg",
+        title: "trendingSong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong3.mpeg",
+        title: "trendingSong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong4.mpeg",
+        title: "trendingSong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong5.mpeg",
+        title: "trendingSong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong6.mpeg",
+        title: "trendingSong6",
+        author: "Another Artist"
+      },
+    ]
 
+
+
+    const BhaktisongData = [
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/bhaktiSongs1.mpeg",
+        title: "Tujh mein",
+        author: "rab dikhta hai"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/bhaktiSongs2.mpeg",
+        title: "bhaktiSongs2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/bhaktiSongs3.mpeg",
+        title: "bhaktiSongs3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/bhaktiSongs4.mpeg",
+        title: "bhaktiSongs4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/bhaktiSongs5.mpeg",
+        title: "bhaktiSongs5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/bhaktiSongs6.mpeg",
+        title: "bhaktiSongs6",
+        author: "Another Artist"
+      },
+     
+    ]
+    const dancedataData = [
+      
+      
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs1.mpeg",
+        title: "danceSongs1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs2.mpeg",
+        title: "danceSongs2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs3.mpeg",
+        title: "danceSongs3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs4.mpeg",
+        title: "danceSongs4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs5.mpeg",
+        title: "danceSongs5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs6.mpeg",
+        title: "danceSongs6",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/danceSongs7.mpeg",
+        title: "danceSongs7",
+        author: "Another Artist"
+      },
+      
+    ]
+    const newsongData = [
+      
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong1.mpeg",
+        title: "newSong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong2.mpeg",
+        title: "newSong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong3.mpeg",
+        title: "newSong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong4.mpeg",
+        title: "newSong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong5.mpeg",
+        title: "newSong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/newSong6.mpeg",
+        title: "newSong6",
+        author: "Another Artist"
+      },
+    ]  
+    const oldsongData = [
+      
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong1.mpeg",
+        title: "oldSong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong2.mpeg",
+        title: "oldSong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong3.mpeg",
+        title: "oldSong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong4.mpeg",
+        title: "oldSong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong5.mpeg",
+        title: "oldSong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/oldSong6.mpeg",
+        title: "oldSong6",
+        author: "Another Artist"
+      },
+    ]
+    const partysongsData = [
+      
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong1.mpeg",
+        title: "partySong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong1.mpeg",
+        title: "partySong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong3.mpeg",
+        title: "partySong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong4.mpeg",
+        title: "partySong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong5.mpeg",
+        title: "partySong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/partySong6.mpeg",
+        title: "partySong6",
+        author: "Another Artist"
+      },
+    ]
+    const romanticsongData = [
+
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong1.mpeg",
+        title: "romanticSong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong2.mpeg",
+        title: "romanticSong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong3.mpeg",
+        title: "romanticSong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong4.mpeg",
+        title: "romanticSong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong5.mpeg",
+        title: "romanticSong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/romanticSong6.mpeg",
+        title: "romanticSong6",
+        author: "Another Artist"
+      },
+    ]
+    const trendingsongData = [
+      
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong1.mpeg",
+        title: "trendingSong1",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong2.mpeg",
+        title: "trendingSong2",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong3.mpeg",
+        title: "trendingSong3",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong4.mpeg",
+        title: "trendingSong4",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong5.mpeg",
+        title: "trendingSong5",
+        author: "Another Artist"
+      },
+      {
+        image: "media/imagesssssssss/imageess/tujh me rab dhikhta h.jpg",
+        src: "media/audio/trendingSong6.mpeg",
+        title: "trendingSong6",
+        author: "Another Artist"
+      },
+    ]
+
+
+    
+
+
+      
+     
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+  
+  
+  
+  
     const playlistContainer = document.getElementById("playlist");
-
-    playlistData.forEach(item => {
+  
+    playlistData.forEach((item, index) => {
       const playlistItem = document.createElement("div");
       playlistItem.className = "playlist-item";
-
+  
       // Create audio element with controls
       const audio = document.createElement("audio");
       audio.className = "audio-control";
       audio.controls = true;
       audio.src = item.src;
-
+  
       playlistItem.innerHTML = `
         <div class="left-content">
-          <div style="margin-right:4px;">${item.index}</div>
+          <div style="margin-right:4px;">${index + 1}</div> <!-- Dynamically set index -->
           <div class="coverer">
             <img src="${item.image}" alt="${item.title}">
             <div class="play-button">
@@ -1224,20 +1624,20 @@ Your browser does not support the audio element.
             </div>
           </div>
           <div>
-            <div>${item.title}</div>
-            <p>${item.author}</p>
+            <div>Song ${item.title}</div>
+            <p>author ${index +1 }</p>
           </div>
         </div>
         <div class="right-content">
           <i class="far fa-heart"></i>
         </div>
       `;
-
+  
       // Append the audio element to the playlist item
       playlistItem.appendChild(audio);
-
+  
       const playButton = playlistItem.querySelector('.play-button i');
-
+  
       // Add click event on the cover image to play/pause audio
       playlistItem.querySelector('.coverer').addEventListener('click', () => {
         if (audio.paused) {
@@ -1247,7 +1647,7 @@ Your browser does not support the audio element.
           audio.pause();
           playButton.classList.replace('fa-pause', 'fa-play');
         }
-
+  
         // Pause any other audio playing
         document.querySelectorAll('.audio-control').forEach(otherAudio => {
           if (otherAudio !== audio) {
@@ -1256,17 +1656,18 @@ Your browser does not support the audio element.
           }
         });
       });
-
+  
       // Change icon when the audio is paused or ended
       audio.addEventListener('pause', () => {
         playButton.classList.replace('fa-pause', 'fa-play');
       });
-
+  
       audio.addEventListener('play', () => {
         playButton.classList.replace('fa-play', 'fa-pause');
       });
-
+  
       playlistContainer.appendChild(playlistItem);
     });
   </script>
+ 
   </html>
