@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,44 +8,125 @@
     <!-- <link rel="stylesheet" href="./assets/css/home.css"> -->
     <link rel="stylesheet" href="./assets/css/home.css">
 </head>
+
 <body>
     <!-- header  -->
-<?php include_once("header.php") ?>
-<div>
-    <div class="owl-carousel py-4">
-    <div class="item" ><img class='carouselImage' src="media/crousel/carousel1.jpg" alt="Image 1"></div>
-    <div class="item" ><img class='carouselImage' src="media/crousel/carousel2.jpg" alt="Image 2"></div>
-    <div class="item" ><img class='carouselImage' src="media/crousel/carousel3.jpg" alt="Image 3"></div>
-    <!-- Add more items as needed -->
-</div>
-<div>
-    <h1>Song Released</h1>
-    <div class="songCategoryCard">
-      <h1 id="main-title" class='songCategoryTitle'>Keroue</h1>
-      <div id="track-info" class='songCategoryImage'>
-                <img class='w-100' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdns-images.dzcdn.net%2Fimages%2Fartist%2F62adf629ddebc20efdae292e4d4382eb%2F500x500.jpg&f=1&nofb=1&ipt=a94c9ffde92718ba9d18cf2c2bc9b988c2b23d43c381747692f0d844196be388&ipo=images"/>
-      </div>
-     
+    <?php include_once("header.php") ?>
+    <div>
+        <div class="owl-carousel py-4">
+            <div class="item"><img class='carouselImage' src="media/crousel/carousel1.jpg" alt="Image 1"></div>
+            <div class="item"><img class='carouselImage' src="media/crousel/carousel2.jpg" alt="Image 2"></div>
+            <div class="item"><img class='carouselImage' src="media/crousel/carousel3.jpg" alt="Image 3"></div>
+            <!-- Add more items as needed -->
+        </div>
+        <div>
+            <h2>Song Released</h2>
+            <div class="category-carousel py-4">
+                <?php
+                $jsonFile = 'data.json';
+
+                // Check if the JSON file exists
+                if (file_exists($jsonFile)) {
+                    // Read the JSON file
+                    $jsonData = file_get_contents($jsonFile);
+
+                    // Decode the JSON data to PHP associative array
+                    $data = json_decode($jsonData, true);
+
+                    // Check if data is decoded successfully
+                    if ($data !== null) {
+                        // Loop through each category
+                        // <div>
+                
+                    foreach ($data['categories'] as $category) {
+                        $categoryId = $category['id'];
+                        $categoryName = $category['name'];
+                        $categorycoverImage = $category['coverImage'];
+
+                    echo "<a class='aTag'  style='text-decoration:none;width:200px:' href='category.php?id=$categoryId'>"; 
+                    echo "<div class='songCategoryCard'>"; 
+                    echo "<h1 id='main-title' class='songCategoryTitle'>$categoryName</h1>"; 
+                    echo "<div id='track-info' class='songCategoryImage'>"; 
+                    echo "<img class='w-100 h-100' src='$categorycoverImage'/>"; 
+                    echo "</div>"; 
+                    echo "</div>"; 
+                    echo "</a>"; 
+                    }                    
+                    } else {
+                        echo "<p>Failed to decode JSON data.</p>";
+                    }
+                } else {
+                    echo "<p>JSON file not found.</p>";
+                }
+                ?>
+            </div>
+        </div>
+        <div>
+            <h2>Top Artists</h2>
+            <div class="d-flex flex-wrap justify-content-around py-4">
+                <?php
+                $jsonFile = 'data.json';
+
+                // Check if the JSON file exists
+                if (file_exists($jsonFile)) {
+                    // Read the JSON file
+                    $jsonData = file_get_contents($jsonFile);
+
+                    // Decode the JSON data to PHP associative array
+                    $data = json_decode($jsonData, true);
+
+                    // Check if data is decoded successfully
+                    if ($data !== null) {
+                        // Loop through each category
+                        // <div>
+                
+                    foreach ($data['popularArtists'] as $artists) {
+                        $artistsName = $artists['name'];
+                        $artistsImage = $artists['image'];
+
+                    // echo "<a class='aTag'  style='text-decoration:none;width:200px:' href='category.php?id=$categoryId'>"; 
+                    echo "<div class='songCategoryCard'>"; 
+                    echo "<h1 id='main-title' class='songCategoryTitle'>$artistsName</h1>"; 
+                    echo "<div id='track-info' class='songCategoryImage'>"; 
+                    echo "<img class='w-100 h-100' src='$artistsImage'/>"; 
+                    echo "</div>"; 
+                    echo "</div>"; 
+                    // echo "</a>"; 
+                    }                    
+                    } else {
+                        echo "<p>Failed to decode JSON data.</p>";
+                    }
+                } else {
+                    echo "<p>JSON file not found.</p>";
+                }
+                ?>
+            </div>
+        </div>
+
     </div>
+    <?php include_once("footer.php") ?>
 
-
-</div>
-
-</div>
-<?php include_once("footer.php") ?>
-    
 </body>
 <script>
-$(document).ready(function(){
+$(document).ready(function() {
     $('.owl-carousel').owlCarousel({
-    center: true,
-    nav:true,
-    items:3,
-    loop:true,
-    margin:10,
+        center: true,
+        nav: true,
+        items: 3,
+        loop: true,
+        margin: 10,
+
+    });
+    // $('.category-carousel').owlCarousel({
+    //     center: true,
+    //     nav:true,
+    //     items:4,
+    //     loop:true,
+    //     margin:10,
+
+    // });
 
 });
- 
-});
 </script>
+
 </html>

@@ -2,103 +2,352 @@
   "categories": [
     {
       "id": 1,
-      "name": "Pop",
+      "name": "Bhakti",
+      "coverImage": "media/coverImages/bhakti.jpeg",
       "songs": [
         {
-          "id": 101,
-          "title": "Blinding Lights",
-          "artist": "The Weeknd",
-          "album": "After Hours",
-          "duration": "3:20"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/bhaktiSongs1.mpeg",
+          "title": "Tujh mein",
+          "author": "rab dikhta hai"
         },
         {
-          "id": 102,
-          "title": "Levitating",
-          "artist": "Dua Lipa",
-          "album": "Future Nostalgia",
-          "duration": "3:23"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/bhaktiSongs2.mpeg",
+          "title": "bhaktiSongs2",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/bhaktiSongs3.mpeg",
+          "title": "bhaktiSongs3",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/bhaktiSongs4.mpeg",
+          "title": "bhaktiSongs4",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/bhaktiSongs5.mpeg",
+          "title": "bhaktiSongs5",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/bhaktiSongs6.mpeg",
+          "title": "bhaktiSongs6",
+          "author": "Another Artist"
         }
       ]
     },
     {
       "id": 2,
-      "name": "Rock",
+      "name": "Dance",
+      "coverImage": "media/coverImages/BestDanceHitsHindi.jpg",
       "songs": [
         {
-          "id": 201,
-          "title": "Bohemian Rhapsody",
-          "artist": "Queen",
-          "album": "A Night at the Opera",
-          "duration": "5:55"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/danceSongs1.mpeg",
+          "title": "danceSongs1",
+          "author": "Another Artist"
         },
         {
-          "id": 202,
-          "title": "Stairway to Heaven",
-          "artist": "Led Zeppelin",
-          "album": "Led Zeppelin IV",
-          "duration": "8:02"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/danceSongs2.mpeg",
+          "title": "danceSongs2",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/danceSongs3.mpeg",
+          "title": "danceSongs3",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/danceSongs4.mpeg",
+          "title": "danceSongs4",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/danceSongs5.mpeg",
+          "title": "danceSongs5",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/danceSongs6.mpeg",
+          "title": "danceSongs6",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/danceSongs7.mpeg",
+          "title": "danceSongs7",
+          "author": "Another Artist"
         }
       ]
     },
     {
       "id": 3,
-      "name": "Hip Hop",
+      "name": "New",
+      "coverImage": "media/coverImages/new.jpg",
       "songs": [
         {
-          "id": 301,
-          "title": "Sicko Mode",
-          "artist": "Travis Scott",
-          "album": "Astroworld",
-          "duration": "5:12"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/newSong1.mpeg",
+          "title": "newSong1",
+          "author": "Another Artist"
         },
         {
-          "id": 302,
-          "title": "God's Plan",
-          "artist": "Drake",
-          "album": "Scorpion",
-          "duration": "3:18"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/newSong2.mpeg",
+          "title": "newSong2",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/newSong3.mpeg",
+          "title": "newSong3",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/newSong4.mpeg",
+          "title": "newSong4",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/newSong5.mpeg",
+          "title": "newSong5",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/newSong6.mpeg",
+          "title": "newSong6",
+          "author": "Another Artist"
         }
       ]
     },
     {
       "id": 4,
-      "name": "Jazz",
+      "name": "Old",
+      "coverImage": "media/coverImages/old.jpg",
       "songs": [
         {
-          "id": 401,
-          "title": "So What",
-          "artist": "Miles Davis",
-          "album": "Kind of Blue",
-          "duration": "9:22"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/oldSong1.mpeg",
+          "title": "oldSong1",
+          "author": "Another Artist"
         },
         {
-          "id": 402,
-          "title": "Take Five",
-          "artist": "Dave Brubeck",
-          "album": "Time Out",
-          "duration": "5:24"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/oldSong2.mpeg",
+          "title": "oldSong2",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/oldSong3.mpeg",
+          "title": "oldSong3",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/oldSong4.mpeg",
+          "title": "oldSong4",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/oldSong5.mpeg",
+          "title": "oldSong5",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/oldSong6.mpeg",
+          "title": "oldSong6",
+          "author": "Another Artist"
         }
       ]
     },
     {
       "id": 5,
-      "name": "Classical",
+      "name": "Party",
+      "coverImage": "media/coverImages/party.jpg",
       "songs": [
         {
-          "id": 501,
-          "title": "Symphony No. 5",
-          "artist": "Ludwig van Beethoven",
-          "album": "Beethoven Symphonies",
-          "duration": "7:05"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/partySong1.mpeg",
+          "title": "partySong1",
+          "author": "Another Artist"
         },
         {
-          "id": 502,
-          "title": "Canon in D",
-          "artist": "Johann Pachelbel",
-          "album": "Baroque Classics",
-          "duration": "6:00"
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/partySong1.mpeg",
+          "title": "partySong2",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/partySong3.mpeg",
+          "title": "partySong3",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/partySong4.mpeg",
+          "title": "partySong4",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/partySong5.mpeg",
+          "title": "partySong5",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/partySong6.mpeg",
+          "title": "partySong6",
+          "author": "Another Artist"
         }
       ]
+    },
+    {
+      "id": 5,
+      "name": "Romantic",
+      "coverImage": "media/coverImages/romantic.jpg",
+      "songs": [
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/romanticSong1.mpeg",
+          "title": "romanticSong1",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/romanticSong2.mpeg",
+          "title": "romanticSong2",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/romanticSong3.mpeg",
+          "title": "romanticSong3",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/romanticSong4.mpeg",
+          "title": "romanticSong4",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/romanticSong5.mpeg",
+          "title": "romanticSong5",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/romanticSong6.mpeg",
+          "title": "romanticSong6",
+          "author": "Another Artist"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trending",
+      "coverImage": "media/coverImages/NowTrending.jpg",
+      "songs": [
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/trendingSong1.mpeg",
+          "title": "trendingSong1",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/trendingSong2.mpeg",
+          "title": "trendingSong2",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/trendingSong3.mpeg",
+          "title": "trendingSong3",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/trendingSong4.mpeg",
+          "title": "trendingSong4",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/trendingSong5.mpeg",
+          "title": "trendingSong5",
+          "author": "Another Artist"
+        },
+        {
+          "image": "media/coverImages/bhakti.jpeg",
+          "src": "media/audio/trendingSong6.mpeg",
+          "title": "trendingSong6",
+          "author": "Another Artist"
+        }
+      ]
+    }
+  ],
+  "popularArtists": [
+    {
+      "name": "Arijit Singh",
+      "image": "media/imagesssssssss/imageess/Arijjit-Singh-Concert.jpeg"
+    },
+    {
+      "name": "Neha Kakkar",
+      "image": "media/imagesssssssss/imageess/neha-kakkar.avif"
+    },
+    {
+      "name": "Shreya Ghoshal",
+      "image": "media/imagesssssssss/imageess/2400.webp"
+    },
+    {
+      "name": "Sonu Nigam",
+      "image": "media/imagesssssssss/imageess/Sonu_Nigam121.jpg"
+    },
+    {
+      "name": "KK",
+      "image": "media/imagesssssssss/imageess/800px-KK_(125).jpg"
+    },
+    {
+      "name": "Shaan",
+      "image": "media/imagesssssssss/imageess/shaan.jpg"
+    },
+    {
+      "name": "Armaan Malik",
+      "image": "media/imagesssssssss/imageess/Armaan_Malik_2016.jpg"
+    },
+    {
+      "name": "Javed Ali",
+      "image": "media/imagesssssssss/imageess/javed ali.jpg"
+    },
+    {
+      "name": "K.S.Chitra",
+      "image": "media/imagesssssssss/imageess/kschitra.jpg"
+    },
+    {
+      "name": "AR Rahman",
+      "image": "media/imagesssssssss/imageess/14-A-R-Rahman-songs-the-world-will-always-be-in-love-with.webp"
     }
   ]
 }

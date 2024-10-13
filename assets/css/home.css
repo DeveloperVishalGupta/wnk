@@ -1,3 +1,8 @@
+.aTag, .aTag:hover{
+    text-decoration: none;
+    color: unset;
+    display: inline-block;
+}
 .carouselImage{
     width: 100%;
     max-width: 600px;
@@ -6,9 +11,10 @@
   /* padding: 1rem; */
 }
 .songCategoryCard {
-    
+    padding-bottom: 1rem;
     border: 1px solid;
-    max-width: 216px;
+    max-width: 252px;
+    width: 252px;
     overflow: hidden;
     margin: 1rem;
     border-radius: 1rem;
@@ -34,4 +40,74 @@
 
   }
 
+  .popular-artists {
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    /* top: 26vw; */
+    box-sizing: border-box;
+  }
+  /* container of the popular artists */
+  .popular-artist-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* images in the popular artists section */
+  .popular-artists div a img {
+    width: 10vw;
+    min-width: 60px;
+    min-height: 60px;
+    height: 10vw;
+    border-radius: 50%;
+  }
+  /* content of the container in popular artists section */
+  .popular-artists > div {
+    /* position: relative; */
+    margin: 5px;
+    text-align: center;
+  }
+  /* I generally use the combination of 3 properties, i.e. display:flex, justify content and align items to position an element */
+  /* at the center of the screen. this is my favourite way. there are other options too, but I prefer this one because */
+  /* it also takes care of the flexibility of the contents of the div */
+  .popular-artist-content > a > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .popular-artist-content > a > div > div {
+    position: absolute;
+    display: flex;
+    /* top: 0px;
+      left: 0px; */
+    top: 0px;
+    width: 10vw;
+    min-width: 60px;
+    min-height: 60px;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity ease-in-out 0.1s;
+  }
+  /* additional icons in this section */
+  .popular-artist-content a div div i {
+    margin: auto;
+    font-size: 3vw;
+    opacity: 0;
+    transition: opacity ease-in-out 0.2s;
+  } /* added hovering effects */
+  .popular-artist-content a div div:hover {
+    opacity: 0.5;
+  }
+  .popular-artist-content a div div:hover i {
+    opacity: 1;
+  }
+  /* text portion in popular artists section */
+  .popular-artists div p {
+    text-align: center;
+  }
   
