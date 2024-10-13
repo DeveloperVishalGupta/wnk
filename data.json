@@ -1,0 +1,104 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Pop",
+      "songs": [
+        {
+          "id": 101,
+          "title": "Blinding Lights",
+          "artist": "The Weeknd",
+          "album": "After Hours",
+          "duration": "3:20"
+        },
+        {
+          "id": 102,
+          "title": "Levitating",
+          "artist": "Dua Lipa",
+          "album": "Future Nostalgia",
+          "duration": "3:23"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Rock",
+      "songs": [
+        {
+          "id": 201,
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen",
+          "album": "A Night at the Opera",
+          "duration": "5:55"
+        },
+        {
+          "id": 202,
+          "title": "Stairway to Heaven",
+          "artist": "Led Zeppelin",
+          "album": "Led Zeppelin IV",
+          "duration": "8:02"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Hip Hop",
+      "songs": [
+        {
+          "id": 301,
+          "title": "Sicko Mode",
+          "artist": "Travis Scott",
+          "album": "Astroworld",
+          "duration": "5:12"
+        },
+        {
+          "id": 302,
+          "title": "God's Plan",
+          "artist": "Drake",
+          "album": "Scorpion",
+          "duration": "3:18"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Jazz",
+      "songs": [
+        {
+          "id": 401,
+          "title": "So What",
+          "artist": "Miles Davis",
+          "album": "Kind of Blue",
+          "duration": "9:22"
+        },
+        {
+          "id": 402,
+          "title": "Take Five",
+          "artist": "Dave Brubeck",
+          "album": "Time Out",
+          "duration": "5:24"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Classical",
+      "songs": [
+        {
+          "id": 501,
+          "title": "Symphony No. 5",
+          "artist": "Ludwig van Beethoven",
+          "album": "Beethoven Symphonies",
+          "duration": "7:05"
+        },
+        {
+          "id": 502,
+          "title": "Canon in D",
+          "artist": "Johann Pachelbel",
+          "album": "Baroque Classics",
+          "duration": "6:00"
+        }
+      ]
+    }
+  ]
+}
