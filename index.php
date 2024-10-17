@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./assets/css/home.css"> -->
     <link rel="stylesheet" href="./assets/css/home.css">
 </head>
 
@@ -17,7 +16,6 @@
             <div class="item"><img class='carouselImage' src="media/crousel/carousel1.jpg" alt="Image 1"></div>
             <div class="item"><img class='carouselImage' src="media/crousel/carousel2.jpg" alt="Image 2"></div>
             <div class="item"><img class='carouselImage' src="media/crousel/carousel3.jpg" alt="Image 3"></div>
-            <!-- Add more items as needed -->
         </div>
         <div>
             <h2>Song Released</h2>

@@ -8,9 +8,7 @@
 </head>
 <footer class='p-4 text-center bg-dark text-light'>Abitha</footer>
 
-<body>
 
-</body>
 <!-- <script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
